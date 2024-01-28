@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <div id="header" style="padding: 1rem 0; background-color: lightblue">
+      <h1 id="main-heading" style="margin: 0">Fruit Shop</h1>
+    </div>
+    <div>
+      <h2 id="basket-heading">Fruits In Basket</h2>
+      <ul class="fruits">
+        <li class="fruit">Banana</li>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Orange</li>
+        <li class="fruit">Kiwi</li>
+      </ul>
+    </div>
+    <div id="thanks"></div>
+  </body>
+  <script>const heading=document.createElement('h3')
+    heading.style.fontStyle='italic'
+    const headtext=document.createTextNode('Buy high quality organic fruits online')
+    heading.appendChild(headtext)
+    console.log(heading)
+    const divss=document.getElementsByTagName('div')
+    const firstdiv=divss[0]
+    const fruitsshop=document.querySelector('.main-heading')
+    firstdiv.insertBefore(heading,fruitsshop)
+    
+    
+    const para=document.createElement('p')
+    const paratext=document.createTextNode('total fruits:4')
+    para.appendChild(paratext)  
+    para.id='fruits-total'
+    console.log(para)
+    const divs=document.getElementsByTagName('div')
+    const seconddiv=divs[1]
+    const fruits=document.querySelector('.fruits')
+    seconddiv.insertBefore(para,fruits)</script>
+</html>
